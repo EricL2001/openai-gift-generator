@@ -114,9 +114,15 @@ export default function Home() {
           <input type="submit" value="Generate Gift Ideas" />
         </form>
 
-        <div className={styles.result}>
-          <ul>{result}</ul>
-        </div>
+        {loading && (
+          <div>
+            <h4>...searching for the best gift ideas 🎁</h4>
+          </div>
+        )}
+        <div
+          className={styles.result}
+          dangerouslySetInnerHTML={{ __html: result }}
+        />
       </main>
     </div>
   );

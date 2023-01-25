@@ -93,6 +93,11 @@
   border: 1px solid #10a37f;
   cursor: pointer;
 }
+
+.main .loading {
+  width: 50px;
+}
+
 .main .result {
   font-weight: bold;
   margin-top: 40px;
